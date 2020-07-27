@@ -1,6 +1,7 @@
 title: My demo site
 email: my-email@example.com
 description: My description here
+destination: docs
 baseurl: ""
 url: ""
 twitter_username: IvaIlieva

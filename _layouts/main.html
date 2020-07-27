@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
     
     <div class="site">
         <header class="site-header">
-            <h1><a href="/">{{ site.title }}</a></h1>
-            <p>{{ site.description }}</p>
+            
+            <div class="site-branding">
+                <h1><a href="/">{{ site.title }}</a></h1>
+                <p>{{ site.description }}</p>
+            </div>
 
-            <nav>
+            <nav class="nav">
                 <ul>
                     {% for page in site.pages %}
                         {% if page.title %}
@@ -22,9 +26,21 @@
                 </ul>
             </nav>
         </header>
+
+        <main class="site-main">
+            
+            <h1>{{ page.title }}</h1>
+
+            {{ content }}
+
+        </main>
+
+        <footer class="site-footer">
+            <p>{{ site.title }} &copy; All rights reserved</p>
+        </footer>
+
     </div>
 
-    {{ content }}
 
 </body>
 </html>

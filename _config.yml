@@ -2,7 +2,7 @@ title: My demo site
 email: my-email@example.com
 description: My description here
 destination: docs
-baseurl: ""
+baseurl: "/My-demo-site"
 url: ""
 twitter_username: IvaIlieva
 github_username:  IvaIlieva
@@ -12,14 +12,15 @@ plugins:
   - jekyll-feed
 
 
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - docs
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
